@@ -5,25 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandesh Bhattarai Profile</title>
 
-    <!-- Link CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .profile,
+        .contact-box {
+            background: #ffffff;
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .profile:hover,
+        .contact-box:hover {
+            transform: scale(1.03);
+        }
+
+        h1 {
+            color: #0077b6;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        .profile p:hover,
+        .contact-box p:hover {
+            color: #0077b6;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="profile">
+    <div class="container">
 
-        <h1>Student Profile</h1>
+        <div class="profile">
+            <h1>Student Information</h1>
 
-        <p><strong>Name:</strong> Sandesh Bhattarai</p>
+            <p><strong>Name:</strong> Sandesh Bhattarai</p>
+            <p><strong>Age:</strong> 21</p>
+            <p><strong>University:</strong> Kyungdong University</p>
+        </div>
 
-        <p><strong>Age:</strong> 21</p>
+        <div class="contact-box">
+            <h1>Contact Information</h1>
 
-        <p><strong>University:</strong> Kyungdong University</p>
-
-        <p><strong>Email:</strong> bhattaraisandesh742@gmail.com</p>
-
-        <p><strong>Phone:</strong> 01043896160</p>
+            <p><strong>Email:</strong> bhattaraisandesh742@gmail.com</p>
+            <p><strong>Phone:</strong> 01043896160</p>
+        </div>
 
     </div>
 
